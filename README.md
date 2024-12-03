@@ -1,9 +1,5 @@
 # Project:
 
-# Data:
-
-exploration of customer utterances (clustering)
-
 ## Project Organization
 
 ```
@@ -54,28 +50,66 @@ exploration of customer utterances (clustering)
 
 ---
 
-# Steps to follow after creating/cloning a project
+# Steps to follow after creating a project
 
 ## create and activate virtual environment
+
+for Windows
 
 ```
 python -m venv .venv
 .venv/Scripts/activate
 ```
 
-## initial commit to the new repo
+for Mac
+
+```
+python -m venv .venv
+source .venv/bin/activate
+```
+
+## setup Git repository
+
+### initialize repo
+
+```
+git init -b  main
+```
+
+### setup user and email
+
+```
+git config user.name "Stanislav Babenyshev"
+git config user.email babenyshevs@gmail.com
+```
+
+### make initial commit
 
 ```
 git add .
 git commit -m "default initial commit"
 ```
 
-## checkout develop branch (optional)
-
-for small project everything might be stored in master
+### checkout develop branch (optional)
 
 ```
 git checkout -b develop
+```
+
+### create remote repo on GitHub
+
+discussed at [link](/guides/content/editing-an-existing-page%5D(https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github#adding-a-local-repository-to-github-using-git)
+
+### add remote repository address to local one
+
+```
+git remote add origin REMOTE-URL
+```
+
+### push changes to remote
+
+```
+git push -u origin main
 ```
 
 ## install requirements
